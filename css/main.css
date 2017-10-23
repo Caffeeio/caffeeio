@@ -63,6 +63,9 @@ p.paragraph {
   color: rgba(0,0,0,.5);
 }
 .logo {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
   font-size: 30px;
   line-height: 30px;
   font-weight: 900;
