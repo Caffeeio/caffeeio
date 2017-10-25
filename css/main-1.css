@@ -10,7 +10,7 @@
 	font-family: 'Varela Round', serif;
 }.footer,
 .header {
-  color: #000000;
+  color: #34314c;
   background: #caffee;
 }
 .ctas-button {
@@ -65,11 +65,17 @@ p.paragraph {
 .logo {
   cursor: pointer;
   text-decoration: none;
-  color: #000000;
+  color: #34314c;
   font-size: 30px;
   line-height: 30px;
   font-weight: 900;
 }
+
+.logo img {
+  vertical-align: bottom;
+  height: 40px;
+}
+
 @media (max-width: 420px) {
   .logo {
     font-size: 22px;
