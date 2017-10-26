@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var input = this.querySelector('input[name="email"]');
       var email = input.value;
       sendData(url, email, function() {
-        console.log('sent!');
+        this.className += ' signup-success';
       });
     })
   }

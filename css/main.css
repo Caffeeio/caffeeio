@@ -338,3 +338,15 @@ p.paragraph {
 		margin-top: 30px;
 	}
 }
+.ctas .signup-form .signup-confirm {
+  display: none;
+  padding: 10px;
+  background: #34314c;
+  color: caffee;
+}
+.ctas .signup-form.signup-success .signup-confirm {
+  display: block;
+}
+.ctas .signup-form.signup-success .form-elements {
+  display: none;
+}
