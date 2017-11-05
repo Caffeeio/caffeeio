@@ -13,15 +13,22 @@ function sendData(url, email, cb) {
 
 document.addEventListener('DOMContentLoaded', function() {
   var forms = document.querySelectorAll('.signup-form');
+  var isSubmitting = false;
   for (var i = 0; i < forms.length; i++) {
     forms[i].addEventListener('submit', function(evt) {
-      var form = this;
-      form.className += ' signup-success';
       evt.preventDefault();
+      if (isSubmitting) {
+        return;
+      }
+      isSubmitting = true;
+      var form = this;
       var url = form.action;
       var input = form.querySelector('input[name="email"]');
       var email = input.value;
+
+      form.className += ' signup-success';
       sendData(url, email, function() {
+        isSubmitting = false;
       });
     })
   }
