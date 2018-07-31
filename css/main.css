@@ -344,8 +344,6 @@ p.paragraph {
 .ctas .signup-form .signup-confirm {
   display: none;
   padding: 10px;
-  background: #34314c;
-  color: caffee;
 }
 .ctas .signup-form.signup-success .signup-confirm {
   display: block;
@@ -372,4 +370,8 @@ p.paragraph {
   padding: 5px 10px;
   border-radius: 5px;
   text-decoration: none;
+}
+
+.calendly-badge-widget {
+  display: none;
 }

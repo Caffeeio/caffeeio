@@ -32,6 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     })
   }
+
+  var scheduleDemoButtons = document.querySelectorAll('button.schedule-demo');
+  for (var i = 0; i < scheduleDemoButtons.length; i++) {
+    scheduleDemoButtons[i].addEventListener('click', function(evt) {
+      evt.preventDefault();
+      document.querySelector('.calendly-badge-content').click();
+    })
+  }
 }, false);
 
 }())
