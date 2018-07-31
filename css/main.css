@@ -189,6 +189,9 @@ p.paragraph {
 	.header	.col-6 {
 		width: 100%;
 	}
+  .col-8 {
+    width: 100%;
+  }
 }.ctas-input {
 	outline: none;
 	border: none;
